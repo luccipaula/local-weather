@@ -10,7 +10,7 @@ $(document).ready(function() {
   
   // Dark Sky API key and formatted URL
   var key = "b3de1e3c7dd2d8741ccf344b96b90285";
-  var api = "https://crossorigin.me/https://api.darksky.net/forecast/";
+  var api = "http://crossorigin.me/https://api.darksky.net/forecast/";
   
   /* retrieve location from browser */
   if (navigator.geolocation) {
