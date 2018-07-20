@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Local Weather App</title>
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+  <script type="text/javascript" src="weatherLocation.js"></script>
+</head>
+
+<body>
+  <div id="photo">
+    
+  </div>
+  
+  <div class="container">
+    <h1 class="text-center">Local Weather</h1>
+    <div class="col-xl-2 col-lg-3 col-md-3 col-xs-12" id="fluff1"></div>
+
+    <div class="col-xl-8 col-lg-6 col-md-6 col-xs-12" id="main">
+      <div id="loader"></div>
+      <h3 class="text-center" id="location"></h3>
+        <canvas class="center-block" id="icon" width="150" height="150"></canvas>
+      <span class="text-center" id="icon-error"></span>
+      
+        <h3 class="text-center" id="temp"></h3>
+      
+      <h4 class="text-center" id="summary"></h4>
+      
+      <button type="submit" class="btn btn-default center-block" id="convert">Convert to °C</button>
+      
+      <h4 class="text-center">Search for weather in another city:</h4>
+      <p id="alert" class="text-center inactive">Please type in an existing city name!</p>
+      <div id="wrapper" class="text-center">
+      <input id ="city-input" type="text" placeholder="Enter city and region">
+        <a id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+      </div>
+      
+    </div>
+    
+  
+    <div class="col-xl-2 col-lg-3 col-md-3 col-xs-12" id="fluff2"></div>
+ </div>
+  
+  <footer>
+    <p class="text-center">Coded by
+      <a class="footer-link" href="https://github.com/caixeta-paula" target="_blank"> <em>viva</em>Lucci</a>
+      <span>//</span>
+      <a href="https://darksky.net/poweredby/">Powered by Dark Sky</a>
+    </p>
+  </footer>
+</body>
+</html>
