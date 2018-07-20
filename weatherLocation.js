@@ -10,7 +10,7 @@ $(document).ready(function() {
   
   // Dark Sky API key and formatted URL
   var key = "b3de1e3c7dd2d8741ccf344b96b90285";
-  var api = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/";
+  var api = "http://cors.io/?https://api.darksky.net/forecast/";
   
   /* retrieve location from browser */
   if (navigator.geolocation) {
@@ -191,7 +191,7 @@ $(document).ready(function() {
     
     
     
-    // before url: https://cors-anywhere.herokuapp.com/, crossorigin.me
+    // before url: https://cors-anywhere.herokuapp.com/, crossorigin.me, http://cors.io/?
     // url format: https://api.darksky.net/forecast/[key]/[latitude],[longitude]
     // Dark Sky key: b3de1e3c7dd2d8741ccf344b96b90285
     // Google Maps api url: https://maps.googleapis.com/maps/api/geocode/json?latlng=' + position.coords.latitude + '%2C' + position.coords.longitude + '&language=en'
