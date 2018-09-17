@@ -3,6 +3,13 @@ body {
   color: #fff;
 }
 
+.home, .home:visited, .home:link, .home:active {
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 #photo {
   background-color: #7fb0d8;
   background-size: cover;
